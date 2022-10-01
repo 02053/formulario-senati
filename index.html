@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es" class="font">
+    <head>
+        <title>Registro de clientes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body class="box-flex">
+        <form class="box-flex width-100 padding-1 box-container">
+            <h1 class="color-white">Registro de Clientes</h1>
+            <div class="content-entries box-flex width-100">
+                <fieldset class="width-100 padding-1">
+                    <label>Nombre:<input type="text" placeholder="Nombre"></label>
+                    <div class="content-number box-flex width-100">
+                        <label>Telefono:<input type="tel" placeholder="Telefono"></label>
+                        <label>Celular:<input type="tel" placeholder="Celular"></label>
+                    </div>
+                    <label>Direccion:<input type="text" placeholder="Direccion"></label>
+                </fieldset>
+                <fieldset class="width-100 padding-1">
+                    <label>NIT:<input type="text" placeholder="NIT"></label>
+                    <label>Correo electrónico:<input type="text" placeholder="Correo electrónico"></label>
+                    <label>Barrio:<input type="text" placeholder="Barrio"></label>
+                </fieldset>
+            </div>
+
+            <div class="content-buttons box-flex width-100">
+                <i class="fa-solid fa-circle-plus"></i>
+                <i class="fa-solid fa-circle-minus"></i>
+                <i class="fa-solid fa-file-pen"></i>
+                <i class="fa-solid fa-calendar-days"></i>
+            </div>
+        </form>
+
+        <section class="content-table box-flex width-100 padding-1 box-container">
+            <table class="width-100">
+                <thead class="color-white">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Monto</th>
+                        <th>T/C</th>
+                        <th>Cuotas</th>
+                        <th>Fecha</th>
+                        <th>Tolerancia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mantenimiento del edificio</td>
+                        <td>20.00</td>
+                        <td>Cuota</td>
+                        <td>0</td>
+                        <td>01/01/15</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Cuota para fiesta anual</td>
+                        <td>95.00</td>
+                        <td>Cuota</td>
+                        <td>5</td>
+                        <td>18/02/15</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <section class="content-table-buttons box-flex font">
+                <div class="buttons-primary">
+                    <button><i class="fa-solid fa-eraser"></i>Borrar</button>
+                    <button><i class="fa-solid fa-cash-register"></i>Reporte</button>
+                </div>
+                <div class="secondary">
+                    <button><i class="fa-solid fa-check"></i>Cobro</button>
+                    <button><i class="fa-solid fa-check-double"></i>Guardar</button>
+                    <button><i class="fa-solid fa-ban"></i>Cancelar</button>
+                </div>
+            </section>
+        </section>
+
+    </body>
+</html>

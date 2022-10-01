@@ -1,0 +1,189 @@
+/* ********** Custom Properties ********** */
+:root {
+    --color-purple-dark: #181622;
+    --color-purple: #853BCE;
+    --color-purple-grey: #33323E;
+    --color-white: #ffffff;
+    --color-grey-400: #6c6b7b;
+    --color-grey-500: #878593;
+    --color-grey-600: #a1a0ab;
+    --color-grey-700: #c4c4ca;
+    --color-blue-700: #8caef2;
+    --background: hsl(250, 24%, 9%);
+    --color-grey-100: hsl(246, 18%, 15%);
+    --color-pink: hsl(270, 70%, 65%);
+    --font: 'Roboto Mono', monospace;
+}
+/* ********** Reset ********** */
+* {
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 16px;
+}
+
+/* ********** Components ********** */
+/* ********** Utilities ********** */
+.box-flex {
+    display: flex;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.padding-1 {
+    padding: 1rem;
+}
+
+.font {
+    font-family: var(--font);
+}
+
+.color-white {
+    color: var(--color-white);
+}
+
+.box-container {
+    flex-direction: column;
+    border-radius: .7rem;
+    background-color: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ********** Site Styles ********** */
+body {
+    background-color: var(--color-purple-dark);
+    height: 100vh;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: var(--background);
+    background-image: linear-gradient(38.73deg, rgba(204, 0, 187, 0.25) 0%, rgba(201, 32, 184, 0) 50%), linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.25) 100%);
+    overflow-y: hidden;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+form {
+    margin: 0 auto;
+}
+
+.content-table {
+    margin: 3rem 0;
+
+}
+
+.content-entries {
+    justify-content: center;
+}
+
+fieldset {
+    border: none;
+}
+
+label,
+input {
+    display: block;
+    width: 100%;
+}
+
+input {
+    margin-bottom: .5rem;
+}
+
+label {
+    padding: .5rem;
+    color: var(--color-grey-700);
+    font-weight: 700;
+}
+
+input {
+    border: 1px solid var(--color-purple-grey);
+    line-height: 1.5rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: .375rem;
+    background-color: transparent;
+    color: var(--color-white);
+    font-size: 1rem;
+}
+
+input:hover {
+    border-color: var(--color-grey-400);
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--color-purple);
+}
+
+input::placeholder {
+    color: var(--color-grey-500);
+    font-size: 1rem;
+    font-family: var(--font);
+}
+
+.content-buttons {
+    justify-content: space-around;
+}
+
+.content-buttons i {
+    color: var(--color-purple);
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.content-buttons i:hover {
+    color: var(--color-pink);
+}
+
+table,
+th,
+td {
+    border: 1px solid var(--color-grey-500);
+    padding: .5rem;
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: rgba(132, 59, 206, 0.15) 0px 4px 24px;
+}
+
+tbody {
+    color: var(--color-grey-500);
+}
+
+.content-table-buttons {
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+
+.content-table-buttons button {
+    font-size: 1rem;
+    background-color: var(--color-purple);
+    color: white;
+    padding: .375rem .5rem;
+    border-radius: .375rem;
+    border: none;
+    cursor: pointer;
+}
+
+.content-table-buttons button:hover {
+    background-color: var(--color-pink);
+}
+
+.content-table-buttons i {
+    margin-right: .5rem;
+}
